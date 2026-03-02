@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    touch-action: none; /* Забороняє зум та скрол при грі */
+}
+
+body {
+    background-color: #faf8ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #776e65;
+}
+
+.score-container {
+    background: #bbada0;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.score-label {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#score {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.new-game-btn {
+    background: #8f7a66;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.board {
+    width: 370px;
+    height: 370px;
+    background-color: #bbada0;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.tile {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(238, 228, 218, 0.35);
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.1s;
+}
+
+.tile-name {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 2px 0;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #776e65;
+}
+
+/* Адаптація для маленьких екранів */
+@media (max-width: 400px) {
+    .board {
+        width: 320px;
+        height: 320px;
+        gap: 5px;
+    }
+    .tile {
+        width: 73px;
+        height: 73px;
+    }
+}
