@@ -10,12 +10,13 @@ const tileData = {
     8: { name: "Junior", img: "Junior.png" },
     16: { name: "Fil", img: "Fil.png" },
     32: { name: "Milka", img: "Milka.png" },
-    64: { name: "Tito", img: "Tito.png" }, // Повторюємо або додавай нові
-    128: { name: "Smartik", img: "Smartik.png" },
-    256: { name: "Junior", img: "Junior.png" },
-    512: { name: "Fil", img: "Fil.png" },
-    1024: { name: "Milka", img: "Milka.png" },
-    2048: { name: "Tito", img: "Tito.png" }
+    64: { name: "Bark", img: "Bark.png" }, // Повторюємо або додавай нові
+    128: { name: "Tito", img: "Tito.png" },
+    256: { name: "Smartik", img: "Smartik.png" },
+    512: { name: "Junior", img: "Junior.png" },
+    1024: { name: "Fil", img: "Fil.png" },
+    2048: { name: "Milka", img: "Milka.png" },
+    4096: { name: "Bark", img: "Bark.png" }
 };
 
 window.onload = function() {
